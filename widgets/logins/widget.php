@@ -1,6 +1,6 @@
 <script src="<?=$us_url_root?>usersc/widgets/logins/Chart.bundle.js"></script>
   <div class="row">
-<!-- BASED ON THE OFFICAL Userspce Logins Widget https://github.com/mudmin/uswidgets/tree/master/src/logins. -->
+<!-- This is an example widget file.  It will be included on the statistics page of the Dashboard. -->
 <!-- Do any php that needs to happen. You already have access to the db -->
 <?php
 
@@ -41,6 +41,17 @@ $logins .= $c.", ";
       </div>
     </div>
   </div><!-- /# column -->
+  
+  
+    <div class="col-lg-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="mb-3">New Users</h4>
+        <canvas id="new-users-chart"></canvas>
+      </div>
+    </div>
+  </div>
+  
 </div> 
 
 
@@ -79,17 +90,8 @@ $newUsersPerDay[] = $todayCount; // Append the count for today to the array
 $newUsersPerDay = array_reverse($newUsersPerDay);
 
 ?>
-<!-- Create a div to hold your widget -->
 
-  <div class="col-lg-6">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="mb-3">New Users</h4>
-        <canvas id="new-users-chart"></canvas>
-      </div>
-    </div>
-  </div><!-- /# column -->
-</div> <!-- end widget section -->
+
 <!-- Put any javascript here -->
 <script type="text/javascript">
 $(document).ready(function() {
