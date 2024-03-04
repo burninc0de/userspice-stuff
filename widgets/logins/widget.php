@@ -42,7 +42,6 @@ $logins .= $c.", ";
     </div>
   </div><!-- /# column -->
   
-  
     <div class="col-lg-6">
     <div class="card">
       <div class="card-body">
@@ -50,9 +49,9 @@ $logins .= $c.", ";
         <canvas id="new-users-chart"></canvas>
       </div>
     </div>
-  </div>
-  
-</div> 
+  </div><!-- /# column -->
+</div> <!-- end widget section -->
+
 
 
 <?php
@@ -90,6 +89,7 @@ $newUsersPerDay[] = $todayCount; // Append the count for today to the array
 $newUsersPerDay = array_reverse($newUsersPerDay);
 
 ?>
+<!-- Create a div to hold your widget -->
 
 
 <!-- Put any javascript here -->
