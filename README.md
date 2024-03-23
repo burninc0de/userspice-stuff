@@ -6,4 +6,4 @@ adds a third graph for showing new users that have joined within the last seven 
 
 # Using Redis for common UserSpice Database Requests
 
-draft for using PHP redis extension
+basic implementation for using PHP redis extension using /usersc/includes/custom_functions.php
